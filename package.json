@@ -3,13 +3,15 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+    "@types/jest": "^29.5.14",
     "babel-jest": "^26.0.1",
     "eslint": "^6.8.0",
     "jest": "^26.0.1"
   },
   "scripts": {
     "eslint": "eslint lib test",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest test/bottles01.test.js --watch"
   },
   "jest": {
     "testEnvironment": "node"
